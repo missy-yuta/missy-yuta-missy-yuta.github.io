@@ -1,0 +1,135 @@
+
+
+
+/* レスポンシブ対応----------------------------------- */
+
+@media all and (max-width: 1490px) {
+    .main{
+      position: fixed;
+      top: 0;
+      left:0;
+      width: 100%;
+      z-index: 100;
+    }
+
+
+    .logo{
+      margin: 10px 0 0 10px;
+      width:800px;
+      height: 80px;
+      float: left;
+    }
+
+    .logo img{
+      width: 340px;
+      height: 70px;
+    }
+
+    .menu_list {
+      background-color: rgb(246, 246, 246);
+      height: 80px;
+
+    }
+    .menu_list ul{
+      display: none;
+
+    }
+
+    /* ハンバーガーメニュー設定 ----------------------*/
+
+    body{
+      padding: 0;
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      color: #333;
+      width: 100%;
+      /* height: 100%; */
+    }
+
+    .menu_tag{
+      display: block;
+      z-index: 115;
+      margin-right: 60px;
+      text-align: right;
+    }
+
+    /* ハンバーガーアイコンの設定 */
+    #show{
+      display: inline;
+      position: fixed;
+      top: 20px;
+      cursor: pointer;
+      z-index: 115;
+    }
+    /* メニューを閉じるアイコン 開く前なので非表示している*/
+    #hide{
+      display: none;
+    }
+
+
+    /* メニューの中身 ---------------------------*/
+
+    .menu_text{
+      display: block;
+      z-index: 100;
+      position: fixed;
+      top: -400px;
+      color: #fff;
+      background-color: rgb(246, 246, 246);
+      box-sizing: border-box;
+      min-width: 100%;
+      transition: 0.6s;
+      padding-bottom: 15px;
+    }
+
+    .menu_text ul{
+      list-style-type: none;
+      padding: 0;
+      /* border-top: solid 1px rgb(187, 187, 187);
+      margin-left: 30px; */
+    }
+
+    .menu_text ul li{
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      border-top: solid 1px rgb(187, 187, 187);
+      /* border-bottom: solid 1px rgb(187, 187, 187); */
+    }
+
+
+    .menu_text ul li a{
+      padding-right: 1600px;
+      padding-bottom: 20px;
+      text-decoration: none;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      color: rgb(0, 0, 0);
+      border-bottom: solid 1px rgb(187, 187, 187);
+    }
+    .menu_text ul li a:hover{
+      color: rgb(18, 102, 5);
+    }
+
+    /* ---------------------------------------------- */
+
+
+    /* メニューを開いた時の挙動 script.js 参照--------- */
+    .menu-open #hide{
+      display: inline;
+      position: fixed;
+      top: 20px;
+      cursor: pointer;
+      z-index: 110;
+    }
+    .menu-open #show{
+      display: none;
+    }
+    .menu-open .menu_text{
+    top: 80px;  /* 通常のメニューバー分下に設定している */ 
+    }
+
+    /* ----------------------------------------------- */
+
+
+  }

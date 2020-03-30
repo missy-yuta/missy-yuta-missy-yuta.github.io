@@ -1,0 +1,262 @@
+
+
+
+/* body------------------------------ */
+
+  body{
+    background-color: rgba(255, 255, 255, 0.781);
+    margin: 0;
+    padding: 0;
+    height: 4000px;
+  }
+  
+
+
+/* about -------------------------------------- */
+
+
+.num_scroll{
+  position: fixed;
+}
+
+.num_scroll #scrollValue{
+  position: fixed;
+  z-index: 150;
+}
+
+
+#item1{
+  display: inline-block;
+  /* position: fixed; */
+  /* top: 0; */
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(78, 255, 181, 0.329); */
+  /* z-index: 30; */
+}
+
+
+#item1 h1{
+  position: absolute;
+  font-size: 150px;
+  top: 450px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  text-align: center;
+  z-index: 50;
+  opacity: 0;
+}
+
+#item1 .top_img{
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  z-index: 40;
+}
+
+
+
+#item2{
+  position: fixed;
+  top: 1000px;
+  width: 100%;
+  height: 6100px;
+  background-color: rgba(37, 37, 37, 0.7);
+  z-index: 50;
+}
+
+#item2 .about_name h1{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  text-align: center;
+  font-size: 50px;
+}
+
+#item2 .about_name h2{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#item2 .about_name p{
+  text-align: center;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  font-size: 24px;
+  line-height: 1.8em;
+  margin-top:50px;
+}
+
+
+
+
+#item2_1{
+
+  background-color: white;
+}
+
+/* ---------------------------------------------  */
+
+#item2 .follow{
+  margin: 250px 0 0 100px;
+  width: 90%;
+  border-bottom: solid 1px black;
+}
+
+#item2 .follow .follow_name{
+  text-align: left;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+.follow_fa{
+  margin: 15px 0 0 100px;
+}
+
+.follow_fa i{
+  margin-right: 5px;
+}
+
+.follow_fa .fa-facebook-official:hover,.follow_fa .fa-tumblr-square:hover,
+.follow_fa .fa-instagram:hover,.follow_fa .fa-wifi:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* page_top -------------------------------------*/
+
+.line_top{
+  margin-top: 150px;
+  text-align: right;
+}
+
+.line_top .pagetop{
+  display: inline;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 50px;
+  padding: 40px 30px 0 30px;
+  border-radius: 350px 350px 0 0;
+  background-color: #90e0ff6c;
+}
+.pagetop a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.pagetop a:hover{
+  color: rgb(0, 0, 0);
+}
+
+
+/* pagetop 追尾用 */
+#page_top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 170px;
+  height: 200px;
+  z-index: 400;
+  opacity: 0;
+  transition: 0.7s;
+  color: black;
+}
+
+
+
+/* -------------------------------------------- */
+
+/* footer --------------------------------------*/
+#pagefoot{
+  width: 100%;
+  height: 200px;
+  background-color: #90e0ff6c;
+  text-align: center;
+}
+#item2_1 #copyright{
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+
+
+
+/* メニューバーの設定 -----------------*/
+
+@media all and (max-width: 1924px) {
+  .main{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+    border-top: solid 1px black; 
+  }
+
+
+  .logo{
+    margin: 30px 0 0 10px;
+    width: 700px;
+    height: 80px;
+    float: left;
+  }
+
+  .menu_list {
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 130px;
+
+  }
+
+  .menu_list ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+
+  }
+
+  .menu_list ul li{
+    font-size: 30px;
+    margin-top: 50px;
+
+  }
+
+  /* メニューバーの文字の位置 */
+  .menu_list ul .home,.menu_list ul .news,.menu_list ul .about,
+  .menu_list ul .access_title{
+    flex-basis: 30%;
+  }
+  .menu_list ul .cafe_menu{
+    
+    flex-basis: 45%;
+  }
+
+
+  .menu_list ul li a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: rgb(0, 0, 0);
+  }
+  .menu_list ul li a:hover{
+    color: rgb(18, 102, 5);
+
+  }
+  .menu_list ul .about a{
+    color: rgb(18, 102, 5);
+    z-index: 10;
+  }
+
+
+  .menu_tag,.menu_text{
+    display: none;
+  }
+
+}

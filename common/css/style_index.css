@@ -1,0 +1,513 @@
+
+
+
+
+/* body------------------------------ */
+
+  body{
+    /* background-color: rgba(255, 251, 252, 0.781); */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 235, 235);
+  }
+
+
+  /* メニューバーの設定 -----------------*/
+
+@media all and (max-width: 1924px) {
+  .main{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+    border-top: solid 1px black;
+  }
+
+
+  .logo{
+    margin: 30px 0 0 10px;
+    width: 700px;
+    height: 80px;
+    float: left;
+  }
+
+  .menu_list {
+    background-color: rgba(255, 255, 255, 0.068);
+    height: 130px;
+
+  }
+
+  .menu_list ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+
+  }
+
+  .menu_list ul li{
+    font-size: 30px;
+    margin-top: 50px;
+
+  }
+
+  /* メニューバーの文字の位置 */
+  .menu_list ul .home,.menu_list ul .news,.menu_list ul .about,
+  .menu_list ul .access_title{
+    flex-basis: 30%;
+  }
+  .menu_list ul .cafe_menu{
+    
+    flex-basis: 45%;
+  }
+
+
+  .menu_list ul li a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: rgb(0, 0, 0);
+  }
+  .menu_list ul li a:hover{
+    color: rgb(18, 102, 5);
+  }
+
+  .menu_list ul .home a{
+    color: rgb(18, 102, 5);
+
+  }
+  .menu_tag,.menu_text{
+    display: none;
+  }
+
+
+  
+  /* ----------------------------------------- */
+  
+
+/*スライドcss----------------------*/
+.swiper-container{
+  background-color: rgba(54, 52, 52, 0.972);
+  max-width: 100%; 
+  height: 100%; 
+  clear: both;
+
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img{
+  max-width: 100%; 
+}
+
+.swiper-my-pagination {
+  display: table;
+  table-layout: fixed;
+  /* margin-bottom:5px; */
+}
+.swiper-my-pagination .swiper-pagination-bullet {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+.swiper-container-horizontal > .swiper-my-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+.swiper-my-pagination img {
+  box-shadow: none;
+  margin-top: 5px;
+  vertical-align: bottom;
+  width:380px;
+  height:150px;
+}
+
+.swiper-my-pagination .swiper-pagination-bullet {
+  /* display: table-cell; */
+  float:left;
+  background: transparent; 
+  opacity: 0.4;
+}
+.swiper-my-pagination .swiper-pagination-bullet-active {
+  background: transparent;
+  margin-top: 0;
+  opacity: 1.0;
+}
+
+/* ------------------------------------------------- */
+
+
+/* news -------------------------------------------------- */
+#news{
+  position: flex;
+  margin-top: 80px;
+}
+
+#news .news_title{
+  text-align: center;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  margin-bottom: 10px;
+}
+
+.news_list{
+  height: 350px;
+  width: 90%;
+  border-top: 2px solid black;
+  background-color: rgba(246, 246, 245, 0.246);
+  margin-left: 100px;
+  overflow-y: scroll;
+  
+}
+.news_list ul{
+  list-style-type: none;
+}
+
+.news_list ul li{
+  border-bottom: 1.5px dotted;
+}
+
+.news_list ul li p{
+  font-size:20px;
+}
+
+
+/* ----------------------------------------------- */
+
+
+
+/* about -------------------------------------- */
+#about{
+  display: flex;
+  margin-top: 70px;
+}
+
+.about_text{
+  flex-basis: 50%;
+  
+  /* background-color: turquoise; */
+}
+
+.about_text h1{
+  position: relative;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 100px;
+  top: 50px;
+  opacity: 0;
+}
+
+.about_text h2{
+  position: relative;
+  font-size: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  top: 50px;
+  margin-left: 100px;
+  opacity: 0;
+}
+
+
+.about_text p{
+  position: relative;
+  top: 50px;
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 100px;
+  opacity: 0;
+}
+
+
+.about_img{
+  flex-basis: 50%;
+  /* background-color: tomato; */
+}
+
+.about_img img{
+  position: relative;
+  top: 50px;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+}
+
+
+/* cafe_menu--------------------------- */
+
+.cafe_img{
+  /* flex-basis: 50%; */
+  /* background-color: tomato; */
+  width: 890px;
+  margin-top: 150px;
+  float:left;
+}
+
+
+.cafe_img img{
+  position: relative;
+  top: 50px;
+  /* max-width: 100%;
+  height: auto; */
+  margin-left: 30px;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+
+#cafe_menu{
+  
+  display: flex;
+  margin-top: 150px;
+}
+
+
+.cafe_text h1{
+  position: relative;
+  top: 50px;
+  margin-left: 250px;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  opacity: 0;
+}
+
+.cafe_text h2{
+  position: relative;
+  top: 50px;
+  margin-left: 150px;
+  font-size: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  opacity: 0;
+}
+
+.cafe_text h3 a{
+  position: relative;
+  top: 50px;
+  margin-left: 250px;
+  display: inline-block;
+  border: 2px solid black;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  color: black;
+  padding: 20px 100px 20px 100px;
+  margin-top: 50px;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.cafe_text h3 a:hover{
+  margin-left: 250px;
+  background-color: rgba(73, 246, 73, 0.596);
+  color: white;
+}
+
+.cafe_text p{
+  position: relative;
+  top: 50px;
+  margin-left: 150px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  margin-top: 2em;
+  opacity: 0;
+}
+
+
+/* drink_menu--------------------------------- */
+
+#drink_menu{
+  display: flex;
+  margin-top: 150px;
+}
+
+.drink_text{
+  margin: 50px 0 0 200px;
+}
+
+
+.drink_text h1{
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 70px;
+  margin-left: 100px;
+  opacity: 0;
+}
+
+.drink_text h2{
+  position: relative;
+  top: 50px;
+  font-size: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: 0;
+}
+
+.drink_text p{
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: 0;
+}
+
+.drink_text h3 a{
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  border: 2px solid black;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  color: black;
+  padding: 20px 100px 20px 100px;
+  margin-top: 100px;
+  margin-left: 100px;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.drink_text h3 a:hover{
+  background-color: rgba(73, 246, 73, 0.596);
+  color: white;
+}
+
+
+.drink_img{
+  position: relative;
+  top: 50px;
+  margin: 70px 0 0 250px;
+  opacity: 0;
+}
+
+
+
+
+/* access ------------------------------ */
+
+#access_title{
+  margin: 200px 0 50px 0;
+  text-align: center;
+}
+
+#access_title h1{
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  margin: 0;
+  opacity: 0;
+}
+
+
+#access p span{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#access{
+  margin: 0 0 0 150px;
+  display: flex;
+}
+
+#access p{
+  position: relative;
+  top: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 50px 50px 0 0;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.access_map{
+  position: relative;
+  top: 50px;
+  margin-top: 50px;
+  opacity: 0;
+}
+
+
+
+/* ---------------------------------------------  */
+
+.follow{
+  margin: 100px 0 0 100px;
+  width: 85%;
+  border-bottom: solid 1px black;
+}
+
+.follow p{
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+.follow_fa{
+  margin: 15px 0 0 100px;
+}
+
+.follow_fa i{
+  margin-right: 5px;
+}
+
+.follow_fa .fa-facebook-official:hover,.follow_fa .fa-tumblr-square:hover,
+.follow_fa .fa-instagram:hover,.follow_fa .fa-wifi:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+
+/* page_top -------------------------------------*/
+
+.line_top{
+  margin-top: 150px;
+  text-align: right;
+}
+
+.line_top .pagetop{
+  display: inline;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 50px;
+  padding: 40px 30px 0 30px;
+  border-radius: 350px 350px 0 0;
+  background-color: #90e0ff6c;
+}
+.pagetop a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.pagetop a:hover{
+  color: rgb(0, 0, 0);
+}
+
+
+/* pagetop 追尾用 */
+#page_top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 170px;
+  height: 200px;
+  z-index: 400;
+  opacity: 0;
+  transition: 0.7s;
+  color: black;
+}
+
+
+
+/* -------------------------------------------- */
+
+/* footer --------------------------------------*/
+#pagefoot{
+  width: 100%;
+  height: 100px;
+  background-color: #90e0ff6c;
+  text-align: center;
+}
+#copyright{
+  font-size: 20px;
+  margin: 0;
+}
+
+}
+
+
+
