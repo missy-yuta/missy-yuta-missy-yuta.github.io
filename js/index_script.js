@@ -15,26 +15,3 @@
   });
 })();
 
-
-/*Swiper使用のスライド-----------------------------------------*/
-var mySwiper = new Swiper('.swiper-container', {
-  loop: true,
-  spaceBetween: 10,
-  autoplay:{
-    delay: 4000,
-    stopOnLastSlide: false,
-    disableOnInteraction: false
-  },
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-  
-  pagination: {
-    el: '.swiper-my-pagination',
-    type: 'progressbar',
-    clickable: true,
-  },
-});  
-
-
