@@ -1,26 +1,4 @@
 
-
-
-
-//scroll fadeIn-------------------------------------
-$(function (){
-    console.log($(window).scrollTop());
-    $(window).scroll(function(){
-        
-        if($(window).scrollTop() > 900 && $(window).scrollTop() < 4500){
-           
-            $('#page_top').css('opacity', '1');
-            $('#page_top').css('margin-top', '50px');
-        }else{
-
-            $('#page_top').css('opacity', '0');
-            $('#page_top').css('margin-top', '0px');
-        }
-    });
-});
-//--------------------------------------------------
-
-
 //ページ内でスクロール移動処理
 $(function(){
    // #で始まるリンクをクリックしたら実行されます
@@ -80,7 +58,16 @@ $(function (){
             }, 600,'swing');
             num_cont_about = true;
         }
-        $('#scrollValue').text(value);
+        
+        if(value > 900 && value < 4500){
+           
+            $('#page_top').css('opacity', '1');
+            $('#page_top').css('margin-top', '50px');
+        }else{
+    
+            $('#page_top').css('opacity', '0');
+            $('#page_top').css('margin-top', '0px');
+        }
     });
 });
 
