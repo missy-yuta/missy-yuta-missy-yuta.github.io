@@ -1,26 +1,5 @@
 
 
-
-
-//scroll fadeIn-------------------------------------
-$(function (){
-    console.log($(window).scrollTop());
-    $(window).scroll(function(){
-        
-        if($(window).scrollTop() > 900 && $(window).scrollTop() < 4500){
-           
-            $('#page_top').css('opacity', '1');
-            $('#page_top').css('margin-top', '50px');
-        }else{
-            
-            $('#page_top').css('opacity', '0');
-            $('#page_top').css('margin-top', '0px');
-        }
-    });
-});
-//--------------------------------------------------
-
-
 //ページ内でスクロール移動処理
 $(function(){
    // #で始まるリンクをクリックしたら実行されます
@@ -37,25 +16,15 @@ $(function(){
 
 
 //パララックス効果
-$(function() {
-    //スクロールの位置を初期化
-    // $('html,body').animate({ scrollTop: 0 }, '1');
-    
-
-    // var top = $('#item1').offset().top; //y座標の初期値を取得
+$(function() {   
     var top = $('#item2').offset().top; //y座標の初期値を取得
-    // var top3 = $('#item3').offset().top; //y座標の初期値を取得
-    // var top4 = $('#item4').offset().top; //y座標の初期値を取得
+    
         $(window).scroll(function() {
-        var value = $(this).scrollTop();  //スクロール値を取得
-        // $('#scrollValue').text(value);
+        var value = $(this).scrollTop();  //スクロール値を取得       
 
         // 取得したスクロール値を矩形のY座標値に指定
         // スクロール値を除算して移動距離に変化をつける
-        // $('#item1').css('top', top + value / 2);
         $('#item2').css('top', top - value / 2);
-        // $('#item3').css('top', top3 - value / 2);
-        // $('#item4').css('top', top4 - value / 2);
     });
 });
 
@@ -81,9 +50,7 @@ $(function (){
         var value = $(this).scrollTop();  //スクロール値を取得
         //スクロール450px以上で表示 
 
-
-        
-        //index フェードイン
+        //cafe_index フェードイン
         if(value > 600){
             $('#about .about_text h1').animate({
                 top: 0,
@@ -190,24 +157,21 @@ $(function (){
             num_cont_about = true;
         }
         
-        $('#scrollValue').text(value);
-
-
-
-        //スクロールで文字を徐々に消す
-        // $('#item2 .about_name p').css('opacity', 1 - value / 500);
-        // $('.top_img').css('opacity', 1 - value / 500);
-        // $('.top_img').css('top', 0 - value / 5);
-        // $('.coffee_1').css('top', 1000 - value / 2);
-        // $('.coffee_2').css('top', 1000 - value / 4);
-        // $('.coffee_3').css('top', 1000 - value / 6);
+         if(value > 900 && value < 4500){
+            $('#page_top').css('opacity', '1');
+            $('#page_top').css('margin-top', '50px');
+        }else{
+            $('#page_top').css('opacity', '0');
+            $('#page_top').css('margin-top', '0px');
+        }
+        
     });
 });
 
 
 
 
-
+//modal-window
 $(function(){
     $('.js-modal-open').each(function(){
         $(this).on('click',function(){
