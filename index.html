@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>portfolio</title>
         <link rel="stylesheet" href="common/css/style.css">
+        <link rel="stylesheet" href="common/css/style1.css">
         <link rel="stylesheet" href="common/css/style_menu_bar.css">
+        <link rel="stylesheet" type="text/css" href="common/css/star-rating-svg.css">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
         <link rel="icon" href="images/favicon.ico">
         <meta name="description" content="portfolio">        
@@ -33,7 +35,7 @@
         <section id="portfolio_title">
             <h1>portfolio</h1>
             <h2>Web Enginner</h2>
-            <img src="images/img_1.jpg" alt="画像" width="1920" height="1000" class="top_img">        
+            <img src="images/img_1.jpg" alt="画像１" width="1920" height="800" class="top_img">        
         </section>
 
 
@@ -41,7 +43,7 @@
         <section id="about">
             <h1>PROFILE</h1>
             <div class="about_prof">
-                <img src="images/main.png" alt="画像" width="100" height="100">
+                <img src="images/main.png" width="360" height="360">
                 <p>
                     はじめまして。ゆうたと申します。<br>
                     前職では、IT業界で日立システムズのホスト運用・監視業務に２年間携わってきました。<br>
@@ -61,8 +63,9 @@
         <section id="skill">
             <h1>SKILL</h1>
             <div class="skill_list">
+                
                 <ul>
-                    <li><p><span>HTML/CSS</span></p>
+                    <li><p><span>HTML/CSS</span><div class="my-rating"></div></p>
                     <p>
                         自分の思うようにマークアップしていくことができます。<br>
                         勉強で使用したサイトや本<br>
@@ -70,23 +73,22 @@
                         ・HTML/CSSデザインの教科書
                     </p></li>
 
-                    <li><p><span>JavaScript</span></p>
+                    <li><p><span>JavaScript</span><div class="my-rating"></div></p>
                     <p>
-                        JavaScriptを使って動きのあるwebサイトを作りました。<br>
                         勉強で使用したサイトや本<br>
                         ・ドットインストール<br>
                         ・初めてのjavascript
                     </p></li>
                 </ul>
                 <ul>
-                    <li><p><span>JQuery</span></p>
+                    <li><p><span>JQuery</span><div class="my-rating"></div></p>
                     <p>
                         JQueryを複数実装されたwebサイトを作りました。<br>
                         勉強で使用したサイトや本<br>
                         ・ドットインストール<br>
                         ・JQueryデザイン入門
                     </p></li>
-                    <li><p><span>資格</span></p>
+                    <li><p><span>資格</span><div class="my-rating"></div></p>
                     <p>
                         ・情報活用検定１級<br>
                         ・webクリエイター能力試験エキスパート(HTML5)    
@@ -103,10 +105,10 @@
         <section id="works">
             <h1>制作実績</h1>
             <div class="works_list">
-                <a href="cafe_index.html"><img src="images/img_port.png" alt="画像" ></a>
+                <a href="cafe_index.html"><img src="images/img_port.png"></a>
                 <p>作品名：飲食サイト<br>
                     制作期間:約４か月<br>
-                    URL:画像をクリック<br>
+                    URL:https://missy-yuta.github.io/cafe_index.html<br>
                     コメント：一般の飲食サイトの模倣になります。<br>
                             現在私が実装可能な動きを取り入れました。<br>
                             制作期間が長い理由ですが、新たに実装していきたい動きなどを考えながら追加し
@@ -125,8 +127,8 @@
             <P>お問い合わせ・SNS</P>
             <p>yutaw21t@gmail.com</p>
             <div class="contact_list">
-                <img src="images/img_twiter.png" alt="画像" width="90" height="90">
-                <img src="images/img_git.png" alt="画像" width="75" height="75">
+                <img src="images/img_twiter.png" width="90" height="90">
+                <img src="images/img_git.png" width="75" height="75">
             </div>
         </section>
 
@@ -139,17 +141,24 @@
         <script src="js/index_jquery.js"></script>
         <script type="text/javascript" src="swiper-master/dist/js/swiper.js"></script>
         <script src="js/index_script.js"></script>
+        <script src="js/jquery.star-rating-svg.js"></script>
+
     </body>
 
     <!-- footer -->
     <footer id="pagefoot">
         <ul>
-            <li><a href="#portfolio_title">HOME</a></li>
-            <li><a href="#about">PROFILE</a></li>
-            <li><a href="#skill">SKILL</a></li>
-            <li><a href="#works">WORKS</a></li>
+            <li><a href="#portfolio_title">home</a></li>
+            <li><a href="#about">profile</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#works">works</a></li>
         </ul>
         <p id="copyright"><small>copyright&copy; 2020 @yuta sato All Rights Reserved.</small></p>
     </footer>
 
 </html>
+
+
+
+
+
