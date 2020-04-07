@@ -1,4 +1,25 @@
 
+
+
+
+//scroll fadeIn-------------------------------------
+$(function (){
+
+    $(".my-rating").starRating({
+        initialRating: 4,
+        strokeColor:'＃894A00',
+        strokeWidth: 5,
+        starSize:25,
+        readOnly: true
+    });
+
+});
+//--------------------------------------------------
+
+
+
+
+
 //ページ内でスクロール移動処理
 $(function(){
    // #で始まるリンクをクリックしたら実行されます
@@ -30,6 +51,7 @@ $(function (){
         top: 400
     }, 1200,'swing');
 
+
     $(window).scroll(function(){
         var value = $(this).scrollTop();  //スクロール値を取得
         //スクロール400px以上で表示 
@@ -58,7 +80,8 @@ $(function (){
             }, 600,'swing');
             num_cont_about = true;
         }
-        
+
+
         if(value > 900 && value < 4500){
            
             $('#page_top').css('opacity', '1');
@@ -68,6 +91,8 @@ $(function (){
             $('#page_top').css('opacity', '0');
             $('#page_top').css('margin-top', '0px');
         }
+
+        $('#scrollValue').text(value);
     });
 });
 
