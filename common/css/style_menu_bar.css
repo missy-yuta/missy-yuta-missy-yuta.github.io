@@ -5,19 +5,14 @@
 
 
   .menu_tag{
-    display: block;
-    z-index: 115;
-    margin-right: 60px;
     text-align: right;
   }
 
   /* ハンバーガーアイコンの設定 */
   #show{
-    display: inline;
     position: fixed;
     top: 20px;
     cursor: pointer;
-    z-index: 115;
   }
   /* メニューを閉じるアイコン 開く前なので非表示している*/
   #hide{
@@ -54,7 +49,6 @@
     margin-bottom: 20px;
     margin-left: 30px;
     border-top: solid 1px rgb(187, 187, 187);
-    /* border-bottom: solid 1px rgb(187, 187, 187); */
   }
 
 
