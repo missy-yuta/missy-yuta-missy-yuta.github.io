@@ -236,7 +236,7 @@ color: black;
 
 /* footer --------------------------------------*/
 #pagefoot{
-width: 100%;
+max-width: 100%;
 background-color: rgb(44, 44, 44);
 
 }
@@ -245,15 +245,15 @@ background-color: rgb(44, 44, 44);
 
 #pagefoot ul{
   display: flex;
+  justify-content: center;
   list-style-type: none;
-  margin-left: 35%;
   margin-top: 0;
 }
 
 #pagefoot ul li{
   margin-top: 50px;
   font-size: 25px;
-  margin-left: 50px;
+  padding: 0 30px 0 0;
 }
 
 #pagefoot ul li a{
