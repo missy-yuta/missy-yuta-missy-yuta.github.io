@@ -176,7 +176,7 @@ height: auto;
 
 #works .works_list p{
   font-size: 30px;
-  display: inline-block;
+  display: block;
   margin-left: 10px;
   line-height: 1.5em;
 }

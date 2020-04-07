@@ -11,10 +11,14 @@
 
   /* ハンバーガーアイコンの設定 */
   #show{
+    display: inline;
     position: fixed;
     top: 20px;
     cursor: pointer;
   }
+  
+  
+  
   /* メニューを閉じるアイコン 開く前なので非表示している*/
   #hide{
     display: none;
