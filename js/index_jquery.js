@@ -1,17 +1,21 @@
 
 
-
-
-//scroll fadeIn-------------------------------------
+//レーティング設定-------------------------------------
 $(function (){
-
-    $(".my-rating").starRating({
-        initialRating: 4,
-        strokeColor:'＃894A00',
-        strokeWidth: 5,
-        starSize:25,
-        readOnly: true
-    });
+    function sample(name,rating,color,width,size,readonly){
+        $(name).starRating({
+            initialRating: rating,
+            strokeColor: color,
+            strokeWidth: width,
+            starSize: size,
+            readOnly: readonly
+        });
+    }
+    var name =[".my-rating1",".my-rating2",".my-rating3",".my-rating4"];
+    var rate = [3.5,3,2.5,2];
+    for(var i=0;i < 4;i++){
+        sample(name[i],rate[i],'＃894A00',5,25,true);
+    }
 
 });
 //--------------------------------------------------
@@ -83,11 +87,9 @@ $(function (){
 
 
         if(value > 900 && value < 4500){
-           
             $('#page_top').css('opacity', '1');
             $('#page_top').css('margin-top', '50px');
         }else{
-    
             $('#page_top').css('opacity', '0');
             $('#page_top').css('margin-top', '0px');
         }
