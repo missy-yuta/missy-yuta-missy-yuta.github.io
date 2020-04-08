@@ -7,7 +7,7 @@
   .menu_tag{
     /* text-align: right; */
     /* margin-right: 60px; */
-    z-index: 120;
+    z-index: 150;
   }
 
   /* ハンバーガーアイコンの設定 */
@@ -17,7 +17,7 @@
     right: 30px;
     top: 20px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 150;
   }
   
   
@@ -92,7 +92,7 @@
     right: 30px;
     top: 20px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 150;
   }
   .menu-open #show{
     display: none;
