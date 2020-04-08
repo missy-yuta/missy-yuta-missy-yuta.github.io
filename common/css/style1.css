@@ -154,29 +154,29 @@ height: auto;
 #works h1{
   font-size: 70px;
   text-align: center;
-  
   margin: 0 0 100px 0;
   color: rgb(24, 23, 23);
 }
 
 
-#works .works_list{
+.works_list{
   display: flex;
+  justify-content: center;
 }
 
 
-#works .works_list img{
-  max-width: 90%;
+.works_list img{
+  max-width: 50%;
   height: auto;
   margin-left: 30px;
 }
 
 
-#works .works_list a:hover{
+.works_list a:hover{
   opacity: 0.7;
 }
 
-#works .works_list p{
+.works_list p{
   font-size: 30px;
   display: inline-block;
   margin-left: 10px;
