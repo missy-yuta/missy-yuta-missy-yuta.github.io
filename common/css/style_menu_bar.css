@@ -17,7 +17,7 @@
     right: 30px;
     top: 20px;
     cursor: pointer;
-    z-index: 120;
+    z-index: 100;
   }
   
   
@@ -89,9 +89,10 @@
   .menu-open #hide{
     display: inline;
     position: fixed;
+    right: 30px;
     top: 20px;
     cursor: pointer;
-    z-index: 110;
+    z-index: 100;
   }
   .menu-open #show{
     display: none;
