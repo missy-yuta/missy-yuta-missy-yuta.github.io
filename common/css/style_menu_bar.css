@@ -5,16 +5,19 @@
 
 
   .menu_tag{
-    text-align: right;
-    margin-right: 60px;
+    /* text-align: right; */
+    /* margin-right: 60px; */
+    z-index: 120;
   }
 
   /* ハンバーガーアイコンの設定 */
   #show{
     display: inline;
     position: fixed;
+    right: 30px;
     top: 20px;
     cursor: pointer;
+    z-index: 120;
   }
   
   
