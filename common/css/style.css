@@ -164,8 +164,7 @@ height: auto;
 
 
 #works .works_list img{
-  display: block;
-  max-width: 90%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -441,7 +440,7 @@ background-color: rgb(44, 44, 44);
   
   
   #works .works_list img{
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
   }
   
