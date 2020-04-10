@@ -34,8 +34,8 @@ $(function(){
 var num_cont = true;
 //スクロールの効果
 $(function (){
-    $('.parallax-window').parallax({imageSrc: 'images/img_3.jpg'});
-    $('.parallax-window_s').parallax({imageSrc: 'images/access_img.jpg'});
+    $('.parallax-window').parallax({imageSrc: 'images/img_top.jpg'});
+    $('.parallax-window_s').parallax({imageSrc: 'images/img_about.jpg'});
 
     $(window).scroll(function(){
         var value = $(this).scrollTop();  //スクロール値を取得
